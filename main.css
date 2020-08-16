@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+}
+
+#header {
+  background-image: url("./assets/tom-gainor-ZqLeQDjY6fY-unsplash.jpg");
+
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: black;
+}
+
+colorScheme {
+  color1: #014b4a;
+  color2: #003a58;
+  color3: ##014b54;
+  color4: ##e4a4bc;
+  color5: ##41345f;
+  color6: ##3f566f;
+}
