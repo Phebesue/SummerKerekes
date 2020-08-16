@@ -1,7 +1,17 @@
 body {
-  background-color: black;
+    background-color: #222222;
+    background-image: url("https://www.transparenttextures.com/patterns/maze-black.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-
+hr {
+    max-width: 3vw;
+    border-width: 3px;
+    border-color: #056868;
+    /* border-color: #014b54; */
+    /* border-color: black; */
+    /* border-color: #A15C6F; */
+    /* color3: #014b54 */
+}
 #header {
   background-image: url("./assets/tom-gainor-ZqLeQDjY6fY-unsplash.jpg");
 
@@ -13,17 +23,96 @@ body {
   background-repeat: no-repeat;
 }
 
-.jumbotron {
+
+/* hr.light {
+    border-color: white;
+} */
+/* .jumbotron {
   background-repeat: no-repeat;
   background-size: contain;
   color: black;
+} */
+
+#landing-section {
+    background-color: #003837;
+    background-size: cover;
+    /* height: 100vh; */
+    display: grid;
+    color: #e4a4bc;
+   
+}
+.aboutContainer{
+    margin: auto;
+    width: 60%;
+}
+.about{
+    padding: 4vh;
+    background-color: rgb(167,182,188, 0.8);
+    border-radius: 3.5rem;
+    display:grid;
+    justify-content: center;
+    margin: auto;
+  
+}
+
+#landing-section h1{
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+    margin-top: 5vh 2vh;
+    margin-left: 2vh;
+    margin-bottom: 5vh;
+
+}
+
+.about p{
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    margin: 3vh;
+}
+
+.about p a{
+    color: black;
+    font-size: 2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.about h5{
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 3vh;
+    padding-top: 3vh;
+}
+
+.aboutme {
+    padding: 4vh;
+    background-color: rgb(167,182,188, 0.8);
+    border-radius: 3.5em;
+}
+
+#project-section{
+    color: #e4a4bc;
+}
+#contact-me{
+    color:white;
+    text-align: center;
 }
 
 colorScheme {
   color1: #014b4a;
   color2: #003a58;
-  color3: ##014b54;
-  color4: ##e4a4bc;
-  color5: ##41345f;
-  color6: ##3f566f;
-}
+  color3: #014b54;
+  color4: #e4a4bc;
+  color5: #41345f;
+  color6: #3f566f;
+  color7: #012f35;
+} */
