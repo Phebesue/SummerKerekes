@@ -11,6 +11,10 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- -----Google Font Links----- -->
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- -----My CSS----- -->
     <link type="text/css" rel="stylesheet" href="main.css">
 </head>
@@ -20,42 +24,66 @@
     <!-- -----  Header  ----- -->
     <section id="header">
         <!-- -----NavBar----- -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-inverse " id="navbar">
+            <!-- <a class="nav-link" href="#">Home</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" id="nav-content">
+                </button>
+
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#landing-section">About</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#landing-section ">About <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project-section">Projects</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#project-section">Projects</a>
+                            <a <a class="dropdown-item" href="#">Proj #1</a>
+                            <a class="dropdown-item" href="#">Proj #2</a>
+                            <a class="dropdown-item" href="#">Proj #3</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-me">Contact</a>
                     </li>
                 </ul>
             </div>
+                    <div class="social">
+                        <a class="btn btn-link btn-lg" href="https://codepen.io/phebesue" target="blank"> <i class="fab fa-codepen"></i> </a>
+                     
+                            <a type="github" class="btn btn-link btn-lg" href="https://github.com/Phebesue" target="blank">  <i class="fab fa-github-square"></i> </a>
+                      
+                     
+                            <a type="codepen" class="btn btn-link btn-lg" href="https://www.linkedin.com/in/summer-kerekes/" target="blank"> <i class="fab fa-linkedin"></i></a>
+                     
+                    
+                    </div>
         </nav>
+
 
         <div class="header container">
             <h1 class="headText" id="name"> Summer J. Kerekes </h1>
-            <h3 class="title-font">-Junior Fullstack Developer-</h3>
+            <h3 class="title-font">-Junior Fullstack Developer</h3>
         </div>
     </section>
 
     <!-- -----  About Me ----- -->
 
-    <!-- -----Jumbotron----- -->
     <section id="landing-section">
 
-        <div class="aboutContainer">
+        <div class="about-container">
             <h1 class="display-4"> About Me </h1>
             <div class="about" id="about">
 
@@ -70,7 +98,7 @@
                     <a href="https://www.elevenfifty.org/" target="blank">Eleven Fifty Academy's</a> JaveScript Web
                     Development Program.</p>
 
-                <hr> 
+                <hr>
 
                 <p class="lead">From the very moment I wrote my first line of code I was hooked. "Hello World!", the
                     console said. Even though I had only typed a simple line of HTML it felt like I had bellowed the
@@ -90,27 +118,201 @@
                 </p>
             </div>
             <hr>
-            <p class="text-center"><a href="assets/11-50 Resume July2020.pdf" download><b>Download
+            <p class="resume text-center"><a href="assets/11-50 Resume July2020.pdf" download><b>Download
                         my Resume</b></a></p>
         </div>
 
-
     </section>
 
-    <!-- =====   Portfolio-section   =====-->
+    <!-- =====   Project section   =====-->
     <section id="project-section">
         <div class="projects">
-            <div class="container">
-                <div class="row">
+            <!-- <div class="container"> -->
+                <!-- <div class="row"> -->
                     <!-- <div class="col"> -->
-                        <h3 class="section-title">Portfolio</h3>
-                        <hr>
-                    </div>
-                </div>
-            </div>
+                    <h3 class="section-title">Projects</h3>
+                    <hr>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-pink btn-lg individual" data-toggle="modal" data-target=" Proj #1">
+    Proj #1 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby=" Proj#1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proj2Label">Proj #2 title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-purple" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-purple">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-purple btn-lg individual" data-toggle="modal" data-target="#proj2">
+    Proj #2 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="proj2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proj2Label">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-aqua btn-lg individual" data-toggle="modal" data-target="#proj3Modal">
+    Proj #3 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="proj3Modal" tabindex="-1" aria-labelledby="proj3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proj3ModalLabel">Proj #3 title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-orange btn-lg individual" data-toggle="modal" data-target="#proj4Modal">
+    Proj #4 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="proj4Modal" tabindex="-1" aria-labelledby="proj4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proj4ModalLabel">Proj #4 title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-orchid btn-lg individual" data-toggle="modal" data-target="#proj5Modal">
+    Proj #5 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="proj5Modal" tabindex="-1" aria-labelledby="proj5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proj5ModalLabel">Proj #5 title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-teal btn-lg individual" data-toggle="modal" data-target="#proj6Modal">
+    Proj #6 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="proj6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Proj #6 title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-blue btn-lg individual" data-toggle="modal" data-target="#proj7Modal">
+    Proj #7 Btn
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="proj7Modal" tabindex="-1" aria-labelledby="proj7ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proj7ModalLabel">Proj #7 title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- <div class="row projects">
+        <!-- <div class="row projects">
                     <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="250"
                         class="projExample4">
                         <div class="overlay">
@@ -121,70 +323,70 @@
 
 
 
-            <div class="container portfolio-img-div">
+        <div class="container portfolio-img-div">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-caption project-cover">
+                        <p class="project-title">CSS Project</p>
+                        <a class="project-cover" href="https://codepen.io/phebesue/pen/pojrzvJ" target="_blank"><img
+                                id="camera-click" class="img-fluid" src="assets/camera-click3.jpg"
+                                alt="Cover image of CSS Project"></a>
+                        <p><span>A character designed using only <br>HTML and CSS..</span></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-caption project-cover">
+                        <p class="project-title">Static Storefront</p>
+                        <a href="https://phebesue.github.io/StaticStoreFront/" target="_blank"><img
+                                id="static-storefront" class="img-fluid" src="assets/StatisStoreFront.jpg"
+                                alt="Preview image of static storefront"></a>
+                        <p><span>A static website for a demo store front.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-caption project-cover">
+                        <p class="project-title">Gold Badge Challenges</p>
+                        <a href="https://github.com/Phebesue/GodBadgeChallenges" target="_blank">
+                            <img id="console-application" class="img-fluid" src="assets/GoldBadgeConsoleApp.jpg"
+                                alt="Preview image of gold badge challenge"></a>
+                        <p><span>Console app using a queue.</span></p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="project-caption project-cover">
-                            <p class="project-title">CSS Project</p>
-                            <a class="project-cover" href="https://codepen.io/phebesue/pen/pojrzvJ" target="_blank"><img
-                                    id="camera-click" class="img-fluid" src="assets/camera-click3.jpg"
-                                    alt="Cover image of CSS Project"></a>
-                            <p><span>A character designed using only <br>HTML and CSS..</span></p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="project-caption project-cover">
-                            <p class="project-title">Static Storefront</p>
-                            <a href="https://phebesue.github.io/StaticStoreFront/" target="_blank"><img
-                                    id="static-storefront" class="img-fluid" src="assets/StatisStoreFront.jpg"
-                                    alt="Preview image of static storefront"></a>
-                            <p><span>A static website for a demo store front.</span>
+                            <p class="project-title">Game Console App</p>
+                            <a href="https://github.com/Phebesue/TeamProject_NumberGuessingGame" target="_blank"><img
+                                    id="game-console" class="img-fluid" src="assets/Game-Console.jpg"
+                                    alt="Preview image of game console app"></a>
+                            <p><span>Game console app - Group Project</span>
                             </p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="project-caption project-cover">
-                            <p class="project-title">Gold Badge Challenges</p>
-                            <a href="https://github.com/Phebesue/GodBadgeChallenges" target="_blank">
-                                <img id="console-application" class="img-fluid" src="assets/GoldBadgeConsoleApp.jpg"
-                                    alt="Preview image of gold badge challenge"></a>
-                            <p><span>Console app using a queue.</span></p>
+                            <p class="project-title">Mouse Park API</p>
+                            <a href="https://github.com/Phebesue/BlueBadgeRepo" target="_blank"><img id="BlueBadge"
+                                    class="img-fluid" src="assets/ShowI.jpg" alt="Preview image of Blue Badge"></a>
+                            <p><span>Blue Badge - Group Project</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-caption project-cover">
-                                <p class="project-title">Game Console App</p>
-                                <a href="https://github.com/Phebesue/TeamProject_NumberGuessingGame"
-                                    target="_blank"><img id="game-console" class="img-fluid"
-                                        src="assets/Game-Console.jpg" alt="Preview image of game console app"></a>
-                                <p><span>Game console app - Group Project</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-caption project-cover">
-                                <p class="project-title">Mouse Park API</p>
-                                <a href="https://github.com/Phebesue/BlueBadgeRepo" target="_blank"><img id="BlueBadge"
-                                        class="img-fluid" src="assets/ShowI.jpg" alt="Preview image of Blue Badge"></a>
-                                <p><span>Blue Badge - Group Project</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-caption project-cover">
-                                <p class="project-title">ASP.NET MVC Inventory App</p>
-                                <a href="https://jewelrymakinginventory.azurewebsites.net/" target="_blank"><img
-                                        id="RedBadge" class="img-fluid" src="assets/Red3.jpg"
-                                        alt="Preview image of Red Badge"></a>
-                                <p><span>Red Badge - Solo Project</span>
-                                </p>
-                            </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="project-caption project-cover">
+                            <p class="project-title">ASP.NET MVC Inventory App</p>
+                            <a href="https://jewelrymakinginventory.azurewebsites.net/" target="_blank"><img
+                                    id="RedBadge" class="img-fluid" src="assets/Red3.jpg"
+                                    alt="Preview image of Red Badge"></a>
+                            <p><span>Red Badge - Solo Project</span>
+                            </p>
                         </div>
                     </div>
                 </div>
-   
-    </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- =====   Contact Form   =====-->
@@ -206,7 +408,6 @@
                         <h5>E-mail: summerkerekes@gmail.com<br>Phone: 513.290.2582</h5>
                         <br>
                         <h5>Please enter your information below.</h5>
-
 
                         <form action="https://formspree.io/xbjzlvoq" method="POST">
                             <input style="height:40px; font-size:13pt;" class="form-control" type="text" name="name"
@@ -245,7 +446,7 @@
                     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
                     crossorigin="anonymous"></script>
                 <!-- -----My JS tag----- -->
-                <script src="main.js"></script>
+                <script src="portfolio.js"></script>
 </body>
 
 </html>
