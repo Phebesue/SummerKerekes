@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&display=swap"
         rel="stylesheet">
-   <!-- -----  Font Awesome  ----- -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <!-- -----  Font Awesome  ----- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- -----My CSS----- -->
     <link type="text/css" rel="stylesheet" href="main.css">
@@ -27,7 +27,7 @@
         <!-- -----NavBar----- -->
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark " id="navbar">
             <!-- <a class="nav-link" href="#">Home</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -92,8 +92,17 @@
             <h1 class="display-4"> About Me </h1>
             <div class="about" id="about">
 
-                <p class="text-center"> --Much akin to the image above, many things seem insurmountable, but there is zero chance of success until we at least try. I also feel strongly that it is important to reflect upon ourselves, our surroundings and our acomplishments.<br>“Mountains know secrets we need to learn. That it might take time, it might be hard, but if you just hold on long enough, you will find the strength to rise up.” – Tyler Knott <br>“Mountains are only a problem when they are bigger than you. You should develop yourself so much that you become bigger than the mountains you face.” – Idowu Koyenikan<br>“When you stand at the bottom of the mountain and look up at the mountaintop, the path looks hard and stony, and the top is obscured by clouds. But when you reach the top and you look down, you realize that there are a thousand paths that could have brought you to that place.” – Roz Savage<br>
-                     Hi! I am a US Army veteran trained in using, maintaining and training
+                <p class="text-center"> --Much akin to the image above, many things seem insurmountable, but there is
+                    zero chance of success until we at least try. I also feel strongly that it is important to reflect
+                    upon ourselves, our surroundings and our acomplishments.<br>“Mountains know secrets we need to
+                    learn. That it might take time, it might be hard, but if you just hold on long enough, you will find
+                    the strength to rise up.” – Tyler Knott <br>“Mountains are only a problem when they are bigger than
+                    you. You should develop yourself so much that you become bigger than the mountains you face.” –
+                    Idowu Koyenikan<br>“When you stand at the bottom of the mountain and look up at the mountaintop, the
+                    path looks hard and stony, and the top is obscured by clouds. But when you reach the top and you
+                    look down, you realize that there are a thousand paths that could have brought you to that place.” –
+                    Roz Savage<br>
+                    Hi! I am a US Army veteran trained in using, maintaining and training
                     users of Army communications equipment. I have 20 years experience making people's lives
                     easier as an Executive Assistant. In 2017, I changed directions. I moved
                     into IT as an associate programmer and co-managed an Enterprise level Skype for Business
@@ -101,7 +110,7 @@
                     purchased and in early 2019, I was laid off. I took
                     Eleven-Fifty's web development bootcamp to up my skillset! I've taken two of their intro to
                     coding for HTML & CSS courses and am excited to learn more! <br>I am currently a student in
-                    <a href="https://www.elevenfifty.org/" target="blank">Eleven Fifty Academy's</a> JaveScript Web
+                    <a href="https://www.elevenfifty.org/" target="blank">Eleven Fifty Academy's</a> JavaScript Web
                     Development Program.</p>
 
                 <hr>
@@ -138,44 +147,23 @@
             <!-- <div class="col"> -->
             <h3 class="section-title">Projects</h3>
             <hr>
-         
+            <br>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-pink btn-lg individual" data-toggle="modal" data-target="proj1">
-                Proj #1 Btn
+            <button type="button" class="btn btn-orchid btn-lg individual" data-toggle="modal"
+                data-target="#proj1Modal">
+                <h2> CSS Drawing </h2><br>
+                <p>Camera.. Click!</p><br>
+                <i class="fa fa-pencil"></i>
+                <!-- <i class="fa fa-cube"></i> -->
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby=" Proj#1Label" aria-hidden="true">
+            <div class="modal fade" id="proj1Modal" tabindex="-1" aria-labelledby="proj1ModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="proj1Label">Proj #1 title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-purple" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-purple">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-purple btn-lg individual" data-toggle="modal" data-target="#proj2">
-                Proj #2 Btn
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="proj2Label" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="proj2Label">Proj #2 title</h5>
+                            <h5 class="modal-title" id="proj1ModalLabel">Proj #1 title</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -191,8 +179,38 @@
                 </div>
             </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-aqua btn-lg individual" data-toggle="modal" data-target="#proj3Modal">
-                Proj #3 Btn
+            <button type="button" class="btn btn-aqua btn-lg individual" data-toggle="modal" data-target="#proj2Modal">
+                <h2> Static Layout </h2><br>
+                <p>Duplicate Site</p><br>
+                <i class="fa fa-code"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="proj2ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="proj2ModalLabel">Proj #2 title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-orange btn-lg individual" data-toggle="modal"
+                data-target="#proj3Modal">
+                <h2> API #1 </h2><br>
+                <p>Pull from keyless API</p><br>
+                <i class="fa fa-exchange"></i>
             </button>
 
             <!-- Modal -->
@@ -216,9 +234,10 @@
                 </div>
             </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-orange btn-lg individual" data-toggle="modal"
-                data-target="#proj4Modal">
-                Proj #4 Btn
+            <button type="button" class="btn btn-pink btn-lg individual" data-toggle="modal" data-target="#proj4Modal">
+                <h2> API #1 </h2><br>
+                <p>Pull from keyed API</p><br>
+                <i class="fa fa-key"></i>
             </button>
 
             <!-- Modal -->
@@ -244,7 +263,9 @@
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-orchid btn-lg individual" data-toggle="modal"
                 data-target="#proj5Modal">
-                Proj #5 Btn
+                <h2> Blue Badge Project </h2><br>
+                <p>tbd</p><br>
+                <i class="fa fa-question-circle"></i>
             </button>
 
             <!-- Modal -->
@@ -269,7 +290,9 @@
             </div>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-teal btn-lg individual" data-toggle="modal" data-target="#proj6Modal">
-                Proj #6 Btn
+                <h2> Red Badge Project </h2><br>
+                <p>tbd</p><br>
+                <i class="fa fa-graduation-cap"></i>
             </button>
 
             <!-- Modal -->
@@ -295,7 +318,9 @@
 
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-blue btn-lg individual" data-toggle="modal" data-target="#proj7Modal">
-                Proj #7 Btn
+                <h2> ASP.NET MVC App </h2><br>
+                <p>Inventory App (w/picts)</p><br>
+                <i class="fa fa-paperclip"></i>
             </button>
 
             <!-- Modal -->
@@ -425,27 +450,27 @@
         </div>
     </div>
 
-                <!-- =====   Footer   =====-->
-                <footer>
+    <!-- =====   Footer   =====-->
+    <footer>
 
-                    <p> 2020 Professional
-                        Portfolio | by Summer J. Kerekes </p>
+        <p> 2020 Professional
+            Portfolio | by Summer J. Kerekes </p>
 
-                </footer>
+    </footer>
 
 
-                <!-- -----BootStrap script tags----- -->
-                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                    crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                    crossorigin="anonymous"></script>
-                <!-- -----My JS tag----- -->
-                <script src="portfolio.js"></script>
+    <!-- -----BootStrap script tags----- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- -----My JS tag----- -->
+    <script src="portfolio.js"></script>
 </body>
 
 </html>

@@ -175,8 +175,10 @@ hr {
     /* width: 75%; */
     height: 390px;
     width: 280px;
+  }
+  .individual .fa{
+    font-size: 60px;
 }
-
 .individual h2 {
     padding-top: 6%;
 }
