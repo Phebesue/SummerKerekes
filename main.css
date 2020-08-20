@@ -207,6 +207,12 @@ hr {
   margin: 15px 0;
 }
 
+footer{
+  color:white;
+  text-align: center;
+  margin: 7vh;
+}
+
 /* -----  Buttons  ----- */
 /* https://blog.koalite.com/bbg/ */
 .btn-blue {
