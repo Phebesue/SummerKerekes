@@ -74,15 +74,13 @@ hr {
   color: black;
 } */
 .dropdown-item {
-  color: white;
+  color: black;
+  background-color:whitesmoke
 }
 #about-section {
-  /* background-color: #003837; */
-
-  /* background-color: #052b3f; */
-  /* background-color: #10262B; */ /* abit dark*/
-  /* background-color: #034952; */
-  background-color: #012f35;
+  
+  /* background-color: #012f35; */
+  background-color:#012B35;
   background-size: cover;
   /* height: 100vh; */
   display: grid;

@@ -48,19 +48,53 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about-section">About <span class="sr-only">(current)</span></a>
                     </li>
-                    <!-- <li class="nav-item dropdown"> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project-section">Projects <span class="sr-only">(current)</span></a>
-                        <!-- <a class="nav-link dropdown-toggle" href="#project-section" id="navbarDropdownMenuLink" role="button" -->
+                    <!-- ----------------- -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
+                        <div class="dropdown-menu ">
+                            <a href="#project-section" class="dropdown-item">Project Section</a>
+                            <div class="dropdown-divider"></div>
 
-
-                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#project-section">Projects</a>
-                            <a class="dropdown-item" href="#">Proj #1</a>
-                            <a class="dropdown-item" href="#">Proj #2</a>
-                            <a class="dropdown-item" href="#">Proj #3</a>
-                        </div> -->
+                            <div class="dropdown-divider"></div>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj1Modal">
+                                CSS Drawing
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj2Modal">
+                                Static Layout
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj3Modal">
+                                Pull from open API
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj4Modal">
+                                Pull from restricted API
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj5Modal">
+                                Blue Badge Project
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj6Modal">
+                                Red Badge Project
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj8Modal">
+                                C# console App
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj9Modal">
+                                C# API
+                            </button>
+                            <button type="button" class="btn dropdown-item" data-toggle="modal"
+                                data-target="#proj7Modal">
+                                ASP.NET MVC App
+                            </button>
+                        </div>
                     </li>
+                    <!-- ------------------------------------ -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-me">Contact</a>
                     </li>
@@ -184,7 +218,8 @@
             <br>
 
             <!-- Button trigger modal 1 -->
-            <button type="button" class="btn btn-sky btn-lg individual" data-toggle="modal" data-target="#proj1Modal">
+            <button type="button" class="btn btn-sky btn-lg individual" id="cssDrawing" data-toggle="modal"
+                data-target="#proj1Modal">
                 <h2> CSS Drawing </h2><br>
                 <p>Camera.. Click!</p><br>
                 <i class="fa fa-pencil"></i>
@@ -271,8 +306,8 @@
                             </button>
                         </div>
                         <div class="modal-body"> Task.. to pull data from an open API on the provided list (I chose <a
-                            href="https://picsum.photos/" target="blank">picsum.photos</a>
-                        ). This project was created during the second week of introduction to
+                                href="https://picsum.photos/" target="blank">picsum.photos</a>
+                            ). This project was created during the second week of introduction to
                             JavaScript at Eleven Fifty Academy. <br><br> <a
                                 href="https://phebesue.github.io/WD-API-Project1-sjk/" target="_blank"><img id="api1"
                                     class="img-fluid" src="assets/api1.jpg" alt="Cover image of Open API"></a>
@@ -296,7 +331,8 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="proj4ModalLabel"><img src="assets/firebase-512.png" alt="" srcset="">
+                            <h5 class="modal-title" id="proj4ModalLabel"><img src="assets/firebase-512.png" alt=""
+                                    srcset="">
                                 Pull from
                                 restricted API</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -304,9 +340,9 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            Task.. to pull data from a keyed API. (I chose <a
-                            href="https://www.ravelry.com/api" target="blank">Ravelry API</a>
-                           ). This project was created during the fourth week of introduction
+                            Task.. to pull data from a keyed API. (I chose <a href="https://www.ravelry.com/api"
+                                target="blank">Ravelry API</a>
+                            ). This project was created during the fourth week of introduction
                             to
                             JavaScript at Eleven Fifty Academy. <br><br> <a href="https://wd-api2-sjk.web.app/"
                                 target="_blank"><img id="api2" class="img-fluid" src="assets/Ravelry-API.jpg"
@@ -405,9 +441,10 @@
                             Task.. to meet requirements of assignment. This project was created during the fourth week
                             of introduction to
                             C# Software Development at Eleven Fifty Academy. <br><br> <a
-                            href="https://github.com/Phebesue/GodBadgeChallenges" target="_blank"><img id="sdGold"
-                                class="img-fluid" src="assets/GoldBadgeConsoleApp.jpg" alt="Cover image of Console App"></a>
-                               
+                                href="https://github.com/Phebesue/GodBadgeChallenges" target="_blank"><img id="sdGold"
+                                    class="img-fluid" src="assets/GoldBadgeConsoleApp.jpg"
+                                    alt="Cover image of Console App"></a>
+
                         </div>
                         <div class="modal-footer">
 
@@ -441,8 +478,9 @@
                             Task.. to meet requirements of assignment. This project was created during the eighth week
                             (Blue Badge Project)
                             of introduction to
-                            C# Software Development at Eleven Fifty Academy. <br><br> <a href="https://github.com/Phebesue/BlueBadgeRepo" target="blank"><img src="assets/ShowI.jpg"
-                                alt="Image not available" class="imgborder"></a>
+                            C# Software Development at Eleven Fifty Academy. <br><br> <a
+                                href="https://github.com/Phebesue/BlueBadgeRepo" target="blank"><img
+                                    src="assets/ShowI.jpg" alt="Image not available" class="imgborder"></a>
                             <p><span>Blue Badge - Group Project</span>
                             </p>
                         </div>
@@ -475,7 +513,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body"> 
+                        <div class="modal-body">
                             <h6>ASP.NET MVC Inventory App</h6>This project was finished during the twelfth week
                             (Red Badge Project)
                             of introduction to
@@ -604,7 +642,7 @@
     <footer>
 
         <p> 2020 Professional
-            Portfolio | by Summer J. Kerekes </p>
+            Portfolio by Summer J. Kerekes </p>
 
     </footer>
 
