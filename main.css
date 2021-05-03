@@ -42,6 +42,10 @@ hr {
   /* justify-content: flex-end; */
   display: block;
 }
+a.btn.btn-link.btn-lg{
+  color: white;
+
+}
 /* https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
 #navbar {
   background-color: #333; /* Black background color */
@@ -50,12 +54,14 @@ hr {
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
-
+a.nav-link{
+  color: white;
+}
 /* Style the navbar links */
 #navbar a {
   float: left;
   display: block;
-  color: white;
+  /* color: white; */
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -73,7 +79,7 @@ hr {
   background-size: contain;
   color: black;
 } */
-.dropdown-item {
+a.dropdown-item {
   color: black;
   background-color:whitesmoke
 }
@@ -127,7 +133,8 @@ hr {
 }
 .about hr {
   width: 50px;
-  border: 1.5px solid #056868;
+  border-width: 3px;
+  border-color: #056868;
 }
 .resume {
   height: 150px;
